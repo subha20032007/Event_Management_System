@@ -7,7 +7,7 @@ const eventRoutes = require('./routes/eventRoutes');
 const cors = require('cors');
 
 dotenv.config();
-
+//app
 const app = express();
 //middleware
 app.use(cors());

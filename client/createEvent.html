@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="CSS/createevent.css">
+</head>
+<body>
+    <div id="body-i">
+        <div>
+            <nav id="nav">
+                <div class="logo">
+                 <img src="logo\textlogo.png" alt="logo">
+                </div>
+                <div class="nav-items">
+                 <a  href="index.html">Home</a>
+                 <a href="discover.html">Events</a>
+                 <a href="./createEvent.html">Create Event</a>
+                 <a href="./manageEvent.html">Manage Events</a><a href=""></a>
+                 <a href="./login.html">Login</a> 
+                 <a href="./register.html">Register</a>
+
+                </div>
+               </nav>
+        </div >
+    <div class="container">
+        <form id="event-form">
+            <h2>Create Event</h2>
+            <label for="title">Event Title</label>
+            <input type="text" id="title" placeholder="Event Title" required>
+            
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Event Description" required></textarea>
+            
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+            
+            <label for="time">Time</label>
+            <input type="time" id="time" required>
+            
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Event Location" required>
+            
+            <label for="ticket_price">Ticket Price</label>
+            <input type="number" id="ticket_price" placeholder="Ticket Price" required>
+            
+            <label for="privacy">Privacy</label>
+            <select id="privacy" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+            
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
+    <div id="foot">
+
+        <div id="footer">
+             <div class="foot-i">
+                <h1>About</h1>
+                <p>FAQs</p>
+                <p>App Status</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Reviews</p>
+             </div>
+             <div class="foot-ii">
+                <h1>Features</h1>
+                <p>Sell Tickets </p>
+                <p>Event Registration</p>
+                <p>Event Management</p>
+                <p>Guest List Management</p>
+                <p>Track Attendlist</p>
+             </div>
+             <div class="foot-iii"> 
+                <h1>Event Software For</h1>
+                <p>Holiday Parties </p>
+                <p>Education</p>
+                <p>Private Events</p>
+                <p>Weddings</p>
+                <p>Meeting Registration</p>
+            </div>
+             <div>
+                <div class="foot-iv"><h1>Follow Us</h1>
+                <div class="social">
+                    <div><img src="logo/facebook.jpg" alt="facebook"></div>
+                    <div><img src="logo/linkedin.png" alt="linkedin"></div>
+                    <div><img src="logo/x.png" alt="x"></div>
+                    <div><img src="logo/insta.jpg" alt="instagram"></div>
+                    <div><img src="logo/youtube.png" alt="youtube"></div>
+                </div>
+            </div>
+             </div>
+         </div>
+           <div class="foot-v">
+             <img src="logo/textlogo.png" alt="">
+             <p>© 2024 All Rights Reserved</p>
+           </div>
+        
+     
+         </div>
+</div>
+    <script src="JS/createevent.js"></script>
+</body>
+</html>

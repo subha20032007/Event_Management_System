@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Event</title>
+    <link rel="stylesheet" href="CSS/registerEvent.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-details {
+    margin-bottom: 20px;
+}
+
+.event-details h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Register for Event</h1>
+        <div class="event-details">
+            <h2 id="event-title"></h2>
+            <p id="event-description"> </p>
+            <p><strong>Date:</strong> <span id="event-date"></span></p>
+            <p><strong>Time:</strong> <span id="event-time"></span></p>
+            <p><strong>Location:</strong> <span id="event-location"></span></p>
+        </div>
+        <form id="registration-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="ticket-type">Ticket Type</label>
+            <select id="ticket-type" required>
+                <option value="general">General - $50</option>
+                <option value="vip">VIP - $100</option>
+            </select>
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" required>
+            <label for="expiry-date">Expiry Date</label>
+            <input type="month" id="expiry-date" required>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" required>
+            <button type="submit">Buy Ticket</button>
+        </form>
+    </div>
+    <script src="JS/registerEvent.js"></script>
+</body>
+</html>
